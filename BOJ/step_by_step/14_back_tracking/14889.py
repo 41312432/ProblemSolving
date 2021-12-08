@@ -28,7 +28,10 @@ i\j	1	2	3	4
 첫째 줄에 스타트 팀과 링크 팀의 능력치의 차이의 최솟값을 출력한다.
 '''
 
-def DFS(depth):
+import sys
+input = sys.stdin.readline
+
+def DFS(depth, curr):
     global diff
     if depth == N // 2:
         start_sum = 0
@@ -38,30 +41,30 @@ def DFS(depth):
                 link.append(i)
         for i in range(0, N // 2 - 1):
             for j in range(i+1, N // 2):
-                start_sum += arr[start[i]][start[j]] + arr[start[j]][start[i]]
-                link_sum += arr[link[i]][link[j]] + arr[link[j]][link[i]]
+                start_sum += S[start[i]][start[j]] + S[start[j]][start[i]]
+                link_sum += S[link[i]][link[j]] + S[link[j]][link[i]]
         diff = min(diff, abs(start_sum-link_sum))
         link.clear()
         return
 
-    for i in range(N):
+    for i in range(curr, N):
         if i in start:
             continue
         start.append(i)
-        DFS(depth + 1)
+        DFS(depth + 1, i)
         start.pop()
 
 if __name__ == "__main__":
 
     N = int(input())
 
-    arr = []
+    S = []
     for i in range(N):
-        arr.append(list(map(int, input().split())))
+        S.append(list(map(int, input().split())))
 
     start = []
     link = []
 
-    diff = float('Inf')
-    DFS(0)
+    diff = 1000
+    DFS(0, 0)
     print(diff)
