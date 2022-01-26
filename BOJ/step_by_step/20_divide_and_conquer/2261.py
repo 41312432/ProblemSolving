@@ -48,6 +48,3 @@ def get_closest(start_point, end_point):
     return closest_distance
 
 print(get_closest(0, n-1))
-
-
-
