@@ -8,7 +8,8 @@ PS는 Python으로 진행합니다.
 
 <details open>
     <summary>분류</summary>
-📦BOJ
+    
+📦BOJ  
  ┣ 📂step_by_step  
  ┃ ┣ 📂[2_if_state](./BOJ/step_by_step/2_if_state/)  
  ┃ ┣ 📂[3_for_state](./BOJ/step_by_step/3_for_state/)  
