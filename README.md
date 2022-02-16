@@ -8,30 +8,29 @@ PS는 Python으로 진행합니다.
 
 <details open>
     <summary>분류</summary>
-
-├── BOJ  
-│ └── 단계별 풀이  
-│ ├── 2. [if 문](./BOJ/step_by_step/2_if_state/)  
-│ ├── 3. [for 문](./BOJ/step_by_step/3_for_state/)  
-│ ├── 4. [while 문](./BOJ/step_by_step/4_while_loop/)  
-│ ├── 5. [Array](./BOJ/step_by_step/5_array/)  
-│ ├── 6. [Function](./BOJ/step_by_step/6_function/)  
-│ ├── 7. [String](./BOJ/step_by_step/7_string/)  
-│ ├── 8. [basic math 1](./BOJ/step_by_step/8_math1/)  
-│ ├── 9. [basic math 2](./BOJ/step_by_step/9_math2/)  
-│ ├── 10. [Recursion](./BOJ/step_by_step/10_recursion/)  
-│ ├── 11. [Burte Force](./BOJ/step_by_step/11_brute_force/)  
-│ ├── 12. [Sorting](./BOJ/step_by_step/12_sorting/)  
-│ ├── 14. [Backtracking](./BOJ/step_by_step/14_back_tracking/)  
-│ ├── 15. [DP 1](./BOJ/step_by_step/15_dynamic_programming/)  
-│ ├── 16. [Greedy](./BOJ/step_by_step/16_greedy/)  
-│ ├── 17. [NumberTheroy & Combination](./BOJ/step_by_step/17_number_and_combination/)  
-│ ├── 18. [Stack](./BOJ/step_by_step/18_stack/)  
-│ ├── 19. [Queue, Dequeue](./BOJ/step_by_step/19_queue_deque/)  
-│ ├── 20. [Divide and Conquer](./BOJ/step_by_step/20_divide_and_conquer/)  
-│ ├── 21. [Binary Search](./BOJ/step_by_step/21_binary_search/)  
-│ ├── 22. [Priority Queue](./BOJ/step_by_step/22_priority_queue/)  
-│ └── 23. [DFS, BFS](./BOJ/step_by_step/23)  
-└──
+📦BOJ
+ ┣ 📂step_by_step  
+ ┃ ┣ 📂[2_if_state](./BOJ/step_by_step/2_if_state/)  
+ ┃ ┣ 📂[3_for_state](./BOJ/step_by_step/3_for_state/)  
+ ┃ ┣ 📂[4_while_loop](./BOJ/step_by_step/4_while_loop/)  
+ ┃ ┣ 📂[5_array](./BOJ/step_by_step/5_array/)  
+ ┃ ┣ 📂[6_function](./BOJ/step_by_step/6_function/)  
+ ┃ ┣ 📂[7_string](./BOJ/step_by_step/7_string/)  
+ ┃ ┣ 📂[8_math1](./BOJ/step_by_step/8_math1/)  
+ ┃ ┣ 📂[9_math2](./BOJ/step_by_step/9_math2/)  
+ ┃ ┣ 📂[10_recursion](./BOJ/step_by_step/10_recursion/)  
+ ┃ ┣ 📂[11_brute_force](./BOJ/step_by_step/11_brute_force/)  
+ ┃ ┣ 📂[12_sorting](./BOJ/step_by_step/12_sorting/)  
+ ┃ ┣ 📂[14_back_tracking](./BOJ/step_by_step/14_back_tracking/)  
+ ┃ ┣ 📂[15_dynamic_programming](./BOJ/step_by_step/15_dynamic_programming/)  
+ ┃ ┣ 📂[16_greedy](./BOJ/step_by_step/16_greedy/)  
+ ┃ ┣ 📂[17_number_and_combination](./BOJ/step_by_step/17_number_and_combination/)  
+ ┃ ┣ 📂[18_stack](./BOJ/step_by_step/18_stack/)  
+ ┃ ┣ 📂[19_queue_deque](./BOJ/step_by_step/19_queue_deque/)  
+ ┃ ┣ 📂[20_divide_and_conquer](./BOJ/step_by_step/20_divide_and_conquer/)  
+ ┃ ┣ 📂[21_binary_search](./BOJ/step_by_step/21_binary_search/)  
+ ┃ ┣ 📂[22_priority_queue](./BOJ/step_by_step/22_priority_queue/)  
+ ┃ ┣ 📂[24_DFS_BFS](./BOJ/step_by_step/24_DFS_BFS/)  
+ ┗
 
 </details>
