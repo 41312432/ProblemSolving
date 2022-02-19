@@ -4,11 +4,11 @@ PS를 진행하며 공부한 내용(코드)이나 생각, 관련 자료나 참�
 
 플랫폼이나 사이트별 또는 알고리즘 종류에 따라 분류합니다.
 
-PS는 Python으로 진행합니다.
+PS는 `Python`으로 진행합니다.
 
 <details open>
     <summary>분류</summary>
-    
+
 📦BOJ  
  ┣ 📂step_by_step  
  ┃ ┣ 📂[2_if_state](./BOJ/step_by_step/2_if_state/)  
