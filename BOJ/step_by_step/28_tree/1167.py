@@ -16,12 +16,12 @@ input = sys.stdin.readline
 
 V = int(input())
 
-tree = [[0]* (V+1) for _ in range(V+1)]
+tree = [[] for _ in range(V+1)]
 
 for _ in range(V):
     code = list(map(int, input().split()))
     for i in range(1, len(code) - 2, 2):
-        tree[code[0]][code[i]] = code[i+1]
+        tree[code[0]].append((code[i], code[i+1]))
 
 q = deque()
 q.append(1)
@@ -30,14 +30,14 @@ visit[1] = 0
 result = [0, 0] 
 while q:
     temp = q.popleft()
-    for i in range(1, len(tree[temp])): #i == node, tree[temp][i] == weight
-        if tree[temp][i] > 0 and visit[i] == -1:    
-            visit[i] = visit[temp] + tree[temp][i]
-            q.append(i)
-            if result[1] < visit[i]:
-                result = i, visit[i]
+    for e, w in tree[temp]:
+        if visit[e] == -1:
+            visit[e] = visit[temp]+ w
+            q.append(e)
+            if result[0] < visit[e]:
+                result = visit[e], e
 
-r = result[0]
+r = result[1]
 
 q = deque()
 q.append(r)
@@ -46,10 +46,11 @@ visit[r] = 0
 result = [0, 0] 
 while q:
     temp = q.popleft()
-    for i in range(1, len(tree[temp])): #i == node, tree[temp][i] == weight
-        if tree[temp][i] > 0 and visit[i] == -1:    
-            visit[i] = visit[temp] + tree[temp][i]
-            q.append(i)
-            if result[1] < visit[i]:
-                result = i, visit[i]
-print(result[1])
+    for e, w in tree[temp]:
+        if visit[e] == -1:
+            visit[e] = visit[temp]+ w
+            q.append(e)
+            if result[0] < visit[e]:
+                result = visit[e], e
+
+print(result[0])
